@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/CalculadoraJAVASCRIPT/index.css">
+</head>
+<body>
+    
+    <!-- Contenedor principal con imagen de fondo -->
+    <div class="body-container">
+        <img src="/CalculadoraJAVASCRIPT/img/6fbfdf07-2adb-4101-a1e9-8366809118c0.png" alt="Fondo del cuerpo" class="background-body">
+        
+        <div class="main-container">
+            <div class="container">
+                <h1>Calculadora de IMC</h1>
+                <!-- Primera calculadora: calcular imc-->
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" placeholder="Ingresa tu peso" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" step="0.01" id="altura" placeholder="Ingresa tu altura" required>
+                </div>
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                <!-- Resultado dentro de un botón/label -->
+                <button id="resultado" class="resultado-label"></button>
+            </div>
+
+            <!-- Segunda calculadora: Verificador de Primo -->
+            <div class="container">
+                <h1>Verificador de Número Primo</h1>
+                <div class="form-group">
+                    <label for="numero">Número entero positivo:</label>
+                    <input type="number" id="numero" placeholder="Ingresa un número" required>
+                </div>
+                <button onclick="verificarPrimo()">Verificar si es Primo</button>
+                <!-- Resultado dentro de un botón/label -->
+                <button id="resultadoPrimo" class="resultado-label"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/CalculadoraJAVASCRIPT/index.js"></script>
+</body>
+</html>

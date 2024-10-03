@@ -1,0 +1,119 @@
+/* Reseteo de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Fondo de la página principal */
+.body-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen de fondo del body */
+.background-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Separación entre las calculadoras */
+}
+
+/* Estilo de los contenedores de las calculadoras */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos de los títulos */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input de datos */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botón de calcular/verificar */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los resultados */
+.resultado-label {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    cursor: default; /* No clickeable */
+}
+
+/* Otros estilos opcionales para los resultados (basado en el tipo de resultado) */
+.resultado-label.success {
+    background-color: #5cb85c;
+}
+
+.resultado-label.warning {
+    background-color: #f0ad4e;
+}
+
+.resultado-label.danger {
+    background-color: #d9534f;
+}
